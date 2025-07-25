@@ -60,7 +60,7 @@ export default function Home() {
 
   }
   const renderNoteContent = () => {
-    if (activeNote && notes.length === 0) {
+    if (activeNote && Array.isArray(notes) && notes.length === 0) {
       return (
         <EmptyState
           message="Create New Notes"
