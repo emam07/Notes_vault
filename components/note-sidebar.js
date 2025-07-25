@@ -29,7 +29,7 @@ const NoteSidebar = ({ notes, onSelectNote,onDeleteNote,activeNoteId }) => {
                 </span></CardAction>
             </CardHeader>
             <CardContent>
-                {notes.length === 0 ?
+                {notes?.length === 0 ?
                     <h1 className="text-center text-xl transition-all duration-300 hover:font-bold hover:scale-110">
                         No notes yet
                     </h1>
