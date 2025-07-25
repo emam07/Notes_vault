@@ -25,7 +25,7 @@ const NoteSidebar = ({ notes, onSelectNote,onDeleteNote,activeNoteId }) => {
             >
                 <CardTitle>My Notes</CardTitle>
                 <CardAction><span className="text-sm text-gray-700 font-medium">
-                    Total Notes: {notes?.length || 0}
+                    
                 </span></CardAction>
             </CardHeader>
             <CardContent>
