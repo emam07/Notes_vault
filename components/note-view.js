@@ -7,7 +7,7 @@ import { Button } from './ui/button';
 import { ScrollArea } from './ui/scroll-area';
 import Linkify from 'linkify-react'; 
 
-const NoteView = ({ note, onEdit }) => {
+const NoteView = ({ note , onEdit }) => {
   return (
     <Card>
       <CardHeader>
