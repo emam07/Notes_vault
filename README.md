@@ -50,7 +50,7 @@ notes-vault/
 └── package.json
 ```
 # 1. Clone the repo
-git clone https://github.com/your-username/notes-vault.git
+git clone https://github.com/emam07/Notes_vault.git
 cd notes-vault
 
 # 2. Install dependencies
