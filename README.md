@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🗂️ Browser Notes Vault
 
-## Getting Started
+A minimalistic yet powerful **browser-based note-taking app** built with **Next.js 14**, **Tailwind CSS**, and **ShadCN UI**, featuring full CRUD, instant sync to localStorage, and a sleek dark/light mode toggle. Designed with performance, scalability, and modern UI/UX principles in mind.
 
-First, run the development server:
+## 🚀 Features
+
+- 📝 Create, update, and delete notes in a responsive UI.
+- 💾 Data is persisted in **localStorage** — no backend required.
+- 🎨 Built with **ShadCN** components and **Tailwind CSS** utility classes.
+- 🌙 Toggle between **Dark/Light** themes using `next-themes`.
+- 🔗 Automatically **linkifies URLs** pasted into notes using `linkify-react`.
+- ⚡ Optimized for speed with **Client Components**, **lazy loading**, and **animation transitions**.
+- 🧠 Type safety with **PropTypes** (JS-friendly alternative to TS interfaces).
+- 🔧 Built with clean code principles, modular structure, and reusability in mind.
+
+## 🖥️ Demo
+
+Coming soon...
+
+<!-- You can host this with Vercel or Netlify and add a link -->
+
+## 🧱 Tech Stack
+
+- **Framework**: [Next.js 14 (App Router)](https://nextjs.org/docs)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/), [ShadCN/UI](https://ui.shadcn.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Persistence**: `localStorage` (no backend needed)
+- **Animation**: `framer-motion`
+- **URL parsing**: `linkify-react`, `linkifyjs`
+
+## 📦 Folder Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+notes-vault/
+├── app/               # App Router pages and layouts
+│   └── page.js        # Main page with layout
+├── components/        # Reusable UI and app components
+│   ├── header.js
+│   ├── empty-state.js
+│   ├── note-view.js
+│   ├── note-editor.js
+│   └── ui/            # ShadCN components (Card, Button, etc.)
+├── lib/               # Utility functions, types
+│   ├── storage.js     # localStorage handlers
+│   └── types.js       # PropTypes definitions
+├── styles/
+│   └── globals.css    # Tailwind & theme styles
+├── public/
+├── README.md
+└── package.json
 ```
+# 1. Clone the repo
+git clone https://github.com/your-username/notes-vault.git
+cd notes-vault
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# 2. Install dependencies
+npm install
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+# 3. Run the development server
+npm run dev
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# 4. Open in browser
+https://notes-vault-s42m.vercel.app/
